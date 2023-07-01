@@ -1,0 +1,202 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+:root{
+    --Snigle-font:"Sniglet",cursive;
+    --Rubik:"Rubik",cursive;
+    --Patua:"Patua One",cursive;
+    --light-black:#2e2c2caf;
+    --light-gray:rgba(212, 209, 209, 0.6);
+}
+*{
+  margin-right: 0px;
+  padding-right: 0px;
+  box-sizing: border-box;
+}
+body{
+    background-image: url("bgimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+.pic{
+    padding:10px;
+}
+
+#nav-bar{
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.navbar{
+    background-image: linear-gradient(to right, #6c6c69,rgba(165, 42, 42, 0.705));
+    padding: 0 !important;
+}
+.navbar-brand a b i{
+    color:darkgray;
+}
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+/* nav bar underlining style */
+.navbar-nav li a {
+  color: #1a1818 !important;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+.navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #1a1818;
+  transition: width 1s ease;
+}
+.navbar-nav li a:hover::after {
+  width: 100%;
+}
+/* Nav bar underlining style ends here */
+
+.col-md-6{
+    color: rgb(252, 250, 250);
+    padding: 11%;
+    
+}
+.promo-title{
+    font-size:2.8em;
+    font-weight: 600;
+    background: linear-gradient(to right, #6c6c69,rgba(165, 42, 42, 0.705));
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 3px 3px 6px black;
+    font-family: var(--Rubik);
+}
+.para{
+    padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #6c6c69,rgba(165, 42, 42, 0.705));
+    font-size: 1em;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px black;
+    margin-bottom: 20px;
+    font-family: var(--Rubik);
+}
+.clicks{
+    text-decoration: none;
+    border-radius: 50px;
+    border: rgba(165, 42, 42, 0.822);
+    background-color: rgba(165, 42, 42, 0.822);
+    color:white;
+    padding: 10px 15px 10px 15px;
+    font-family: var(--Rubik);
+}
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url("Casual Background.png");
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+  }
+  
+  .cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+  
+  .cover .content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #6c6c69,rgba(165, 42, 42, 0.705));
+    padding-top: 19vmin;
+  }
+  
+  .cover .content > h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+  }
+  
+  .cover .content > p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+  }
+  
+  .numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(165, 42, 42, 0.705);
+  }
+  
+  .numbers {
+    margin-top: -15vmin;
+  }
+  
+  .numbers .rect h1 {
+    font-size: 5rem;
+    color: rgba(165, 42, 42, 0.705);
+  }
+  
+  .numbers .rect > p {
+    font-family: var(--Patua);
+  }
+/* FOR COUNTER */
+.counter {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: rgba(165, 42, 42, 0.822);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-right: 25px;
+}
+.txt{
+  color: rgba(165, 42, 42, 0.822);
+}
+#review-counter{
+  margin-right: 30px;
+}
+.counter.animated {
+  animation: counter-animation 5s ease-out forwards;
+  animation-play-state: paused;
+}
+
+@keyframes counter-animation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/*Footer*/
+.footer{
+  background-color: rgb(63, 63, 63);
+  color: rgb(252, 253, 254);
+  width: 100%;
+  margin-top: auto; 
+}
